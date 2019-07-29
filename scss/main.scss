@@ -77,12 +77,14 @@ main{
 
 //ABOUT ME ______________________________________
 .about-info{
+    
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
     'bioimage bio bio'
     'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
+    
 }
 
 .bio-image{
@@ -129,6 +131,67 @@ main{
         }
     }
 }
+
+//ABOUT PROJECTS________________________
+.about-project{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'projectimage1 projectimage2 projectimage3'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr)
+}
+.project-image1{
+    @include easeOut;
+    grid-area: projectimage1;
+    padding: 10px;
+    height: 400px;
+    opacity: 0.5;
+    position: fixed;
+    width: 550px;
+    border: $secondary-color 3px solid;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        @include easeOut;
+    }
+}
+.project-image2{
+    opacity: 0.5;
+    @include easeOut;
+    grid-area: projectimage2;
+    padding: 10px;
+    height: 400px;
+    width: 550px;
+    border: $secondary-color 3px solid;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        @include easeOut;
+    }
+}
+.project-image3{
+    grid-area: projectimage3;
+    opacity: 0.5;
+    @include easeOut;
+    padding: 10px;
+    height: 400px;
+    width: 550px;
+    border: $secondary-color 3px solid;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        @include easeOut;
+    }
+}
+.job{
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    height: 200px;
+    width: 550px;
+    border-bottom: $secondary-color 5px solid;
+}
+
 
 //Contac_________________________
 
