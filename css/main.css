@@ -54,7 +54,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/logo1.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -192,6 +192,59 @@ main {
       border-color: #eece1a;
       transition: all 0.8s ease-out; }
 
+.about-project {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'projectimage1 projectimage2 projectimage3' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr); }
+
+.project-image1 {
+  transition: all 0.8s ease-out;
+  grid-area: projectimage1;
+  padding: 10px;
+  height: 400px;
+  opacity: 0.5;
+  position: fixed;
+  width: 550px;
+  border: #eece1a 3px solid; }
+  .project-image1:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.8s ease-out; }
+
+.project-image2 {
+  opacity: 0.5;
+  transition: all 0.8s ease-out;
+  grid-area: projectimage2;
+  padding: 10px;
+  height: 400px;
+  width: 550px;
+  border: #eece1a 3px solid; }
+  .project-image2:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.8s ease-out; }
+
+.project-image3 {
+  grid-area: projectimage3;
+  opacity: 0.5;
+  transition: all 0.8s ease-out;
+  padding: 10px;
+  height: 400px;
+  width: 550px;
+  border: #eece1a 3px solid; }
+  .project-image3:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.8s ease-out; }
+
+.job {
+  background: #515151;
+  padding: 0.5rem;
+  height: 200px;
+  width: 550px;
+  border-bottom: #eece1a 5px solid; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -242,7 +295,10 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -265,7 +321,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/logo2.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
