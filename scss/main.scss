@@ -30,6 +30,15 @@ h1, h2, h3{
       padding: 0.2rem 1rem; 
       background: rgba(lighten($primary-color, 2), 0.3); 
     }
+    &.lg-heading2{
+        font-size: 6rem;
+    }
+
+    &.sm-heading2{
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem; 
+      background: rgba(lighten($primary-color, 2), 0.3); 
+    }
 }
 
 a{
@@ -46,6 +55,9 @@ header{
 .text-secondary{
 color: $secondary-color;
 }
+.bio-secondary{
+    color: $secondary-color;
+    }
 
 main{
     padding: 4rem;
@@ -90,13 +102,19 @@ main{
 .bio-image{
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
     border: $secondary-color 3px solid;
+}
+
+.bio-secondary {
+    grid-area: bio;
+    font-size: 2rem;
+    border-bottom: white 3px solid;
 }
 
 .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    padding: 0.5rem;
 }
 
 .job-1{

@@ -6,6 +6,18 @@
 .projects-info{
     grid-template-columns: repeat(4, 1fr);
 }
+.lg-heading2{
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.sm-heading2{
+    align-items: center;
+    text-align: center;
+}
+
+
 }
 
 //desktop and lap
@@ -53,6 +65,16 @@
     }
 
     .boxes{
+        align-items: center;
+        text-align: center;
+    }
+    .lg-heading2{
+        align-items: center;
+         text-align: center;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    .sm-heading2{
         align-items: center;
         text-align: center;
     }
@@ -126,7 +148,16 @@
     .projects{
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .lg-heading2{
+        align-items: center;
+         text-align: center;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    .sm-heading2{
+        align-items: center;
+        text-align: center;
+    }
    
 }
 
@@ -160,6 +191,17 @@
     }
 
     .boxes{
+        align-items: center;
+        text-align: center;
+    }
+
+    .lg-heading2{
+        align-items: center;
+         text-align: center;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    .sm-heading2{
         align-items: center;
         text-align: center;
     }
